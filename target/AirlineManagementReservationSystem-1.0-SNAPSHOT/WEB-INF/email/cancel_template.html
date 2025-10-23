@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Booking Cancelled</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;color:#333;background:#fdf6f6;padding:20px}
+    .card{max-width:700px;margin:0 auto;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .header{background:linear-gradient(90deg,#8b0000,#b30000);color:#fff;padding:22px;text-align:center}
+    .content{padding:22px}
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    th, td{padding:10px;border:1px solid #efecec;text-align:left}
+    th{background:#fff7f7;color:#b30000;width:35%}
+    .note{margin-top:12px;color:#555}
+    .footer{padding:18px;background:#fff7f7;text-align:center;font-size:13px;color:#666}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div style="font-size:20px;font-weight:700">SkyWings Airlines</div>
+      <div style="margin-top:6px;font-size:15px">Booking Cancelled</div>
+    </div>
+
+    <div class="content">
+      <p>Hi <strong>{{USERNAME}}</strong>,</p>
+      <p>Your booking has been <strong>cancelled</strong>. Details below:</p>
+
+      <table>
+        <tr><th>Booking ID</th><td>{{BOOKING_ID}}</td></tr>
+        <tr><th>Flight</th><td>{{FLIGHT_NUM}} ({{AIRLINE}})</td></tr>
+        <tr><th>Travel Date</th><td>{{TRAVEL_DATE}}</td></tr>
+        <tr><th>Class</th><td>{{CLASS}}</td></tr>
+        <tr><th>Passengers</th><td>{{PASSENGERS}}</td></tr>
+      </table>
+
+      <p class="note">If you cancelled by mistake or need more support, contact <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a></p>
+    </div>
+
+    <div class="footer">
+      SkyWings • We hope to serve you again soon.
+    </div>
+  </div>
+</body>
+</html>

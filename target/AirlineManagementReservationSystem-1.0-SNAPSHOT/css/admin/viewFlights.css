@@ -1,0 +1,123 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1300px; /* slightly wider than before */
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    color: #02487c;
+    font-weight: 600;
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+/* Back Link */
+.back-link {
+    display: inline-block;
+    margin: 15px 0;
+    text-decoration: none;
+    color: #02487c;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Table Styling */
+table {
+    width: 98%; /* wider table */
+    margin: 25px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background: #02487c;
+    color: #fff;
+}
+
+th, td {
+    padding: 16px 18px; /* slightly bigger padding */
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9fcff;
+}
+
+tbody tr:hover {
+    background-color: #e6f0f9;
+    transition: 0.2s ease-in-out;
+}
+
+/* No data row */
+.no-data {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Action Buttons Container */
+.actions {
+    display: flex;
+    justify-content: center; /* center them in the cell */
+    gap: 10px;              /* spacing between Edit & Delete */
+}
+
+/* Common button styling */
+.btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Edit Button */
+.btn.edit {
+    background: #28a745;
+    color: #fff;
+    border: none;
+}
+
+.btn.edit:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+/* Delete Button */
+.btn.delete {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.btn.delete:hover {
+    background: #b02a37;
+    transform: scale(1.05);
+}

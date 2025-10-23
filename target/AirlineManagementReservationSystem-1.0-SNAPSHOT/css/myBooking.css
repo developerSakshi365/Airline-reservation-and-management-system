@@ -1,0 +1,74 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #02487c;
+    padding: 20px;
+    margin: 0;
+    font-weight: 600;
+}
+
+table {
+    width: 90%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background: #02487c;
+    color: #fff;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9fcff;
+}
+
+tbody tr:hover {
+    background-color: #e6f0f9;
+    transition: 0.2s ease-in-out;
+}
+
+/* No data row */
+.no-data {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Cancel button styling */
+button {
+    background: #cc0000; /* darker red */
+    border: none;
+    color: #fff;
+    padding: 7px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+button:hover {
+    background: #a30000;
+    transform: scale(1.05);
+}

@@ -1,0 +1,167 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* ✅ Sleek Header */
+.about-header {
+    background: linear-gradient(135deg, #02487c, #0367a6);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+.about-header i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.about-header h1 {
+    font-size: 2.5rem;
+    margin: 5px 0;
+}
+.about-header .tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Container */
+.about-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* About Cards */
+.about-card {
+    background: #fff;
+    border-left: 5px solid #02487c;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.6s ease;
+
+}
+.about-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+.about-card h2 {
+    color: #02487c;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.4rem;
+}
+.about-card p, 
+.about-card ul {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Lists */
+.about-card ul {
+    list-style: none;
+    padding: 0;
+}
+.about-card ul li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+}
+.about-card ul li::before {
+    content: "✈";
+    position: absolute;
+    left: 0;
+    color: #02487c;
+}
+
+/* Stats */
+.stats ul li strong {
+    color: #02487c;
+}
+
+/* ✅ Timeline Style */
+.timeline ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    position: relative;
+}
+.timeline ul::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #02487c;
+    border-radius: 2px;
+}
+.timeline ul li {
+    margin: 15px 0;
+    padding-left: 40px;
+    position: relative;
+}
+.timeline ul li::before {
+    content: "•";
+    position: absolute;
+    left: 2px;
+    font-size: 1.5rem;
+    color: #02487c;
+}
+.timeline ul li span {
+    font-weight: bold;
+    color: #02487c;
+}
+
+/* Contact Section */
+.contact a {
+    color: #02487c;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Ready to Fly Button (smaller + sleek) */
+.ready-to-fly {
+    text-align: center;
+    margin: 30px 0;
+}
+.ready-to-fly button {
+    background: #02487c;
+    color: #fff;
+    padding: 10px 25px;       /* smaller padding */
+    border: none;
+    border-radius: 50px;      /* pill-shaped */
+    font-size: 1rem;          /* smaller font */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+.ready-to-fly button:hover {
+    transform: scale(1.08);
+    background: #0367a6;      /* lighter hover shade */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+/* Footer */
+/* Footer */
+
+
+/* ✅ Animation */
+@keyframes fadeInUp {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}

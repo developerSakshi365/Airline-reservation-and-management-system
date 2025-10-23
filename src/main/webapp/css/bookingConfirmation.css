@@ -1,0 +1,59 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #89f7fe, #1e3c72);
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper centers only the container, not navbar */
+.confirmation-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* adjust for navbar height */
+    padding: 20px;
+}
+
+/* Confirmation card */
+.confirmation-container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    max-width: 500px;
+    text-align: center;
+}
+
+.confirmation-container h1 {
+    color: #2e8b57;
+    margin-bottom: 20px;
+}
+
+/* Booking details section */
+.booking-details {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.booking-details p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #333;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2e8b57;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #256f47;
+}

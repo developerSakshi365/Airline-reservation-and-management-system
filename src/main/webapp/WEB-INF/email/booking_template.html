@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Booking Confirmation</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;color:#333;background:#f4f6f9;padding:20px}
+    .card{max-width:700px;margin:0 auto;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+    .header{background:linear-gradient(90deg,#02487c,#0367a6);color:#fff;padding:22px;text-align:center}
+    .logo {font-size:22px;font-weight:700}
+    .content{padding:22px}
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    th, td{padding:10px;border:1px solid #e6e6e6;text-align:left}
+    th{background:#f8fbff;color:#02487c;width:35%}
+    .total{font-weight:700;color:#02487c}
+    .footer{padding:18px;background:#f8f9fb;text-align:center;font-size:13px;color:#666}
+    .btn{display:inline-block;background:#02487c;color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="logo">SkyWings Airlines</div>
+      <div style="margin-top:6px;font-size:15px">Your booking is confirmed</div>
+    </div>
+
+    <div class="content">
+      <p>Hi <strong>{{USERNAME}}</strong>,</p>
+      <p>Thank you for booking with us. Your ticket is confirmed — see details below:</p>
+
+      <table>
+        <tr><th>Booking ID</th><td>{{BOOKING_ID}}</td></tr>
+        <tr><th>Flight</th><td>{{FLIGHT_NUM}} ({{AIRLINE}})</td></tr>
+        <tr><th>Route</th><td>{{SOURCE}} → {{DEST}}</td></tr>
+        <tr><th>Travel Date</th><td>{{TRAVEL_DATE}}</td></tr>
+        <tr><th>Departure</th><td>{{DEPARTURE}}</td></tr>
+        <tr><th>Arrival</th><td>{{ARRIVAL}}</td></tr>
+        <tr><th>Class</th><td>{{CLASS}}</td></tr>
+        <tr><th>Passengers</th><td>{{PASSENGERS}}</td></tr>
+        <tr><th class="total">Total Price</th><td class="total">₹ {{TOTAL_PRICE}}</td></tr>
+      </table>
+
+      <p style="margin-top:12px">
+        <a class="btn" href="{{HOME_URL}}">Manage Booking</a>
+      </p>
+
+      <p style="margin-top:16px;color:#555">If you need help, contact us at <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a></p>
+    </div>
+
+    <div class="footer">
+      SkyWings • Safe travels • &copy; 2025
+    </div>
+  </div>
+</body>
+</html>

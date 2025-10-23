@@ -1,0 +1,170 @@
+/* Page container 
+.flights-page {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ Headline 
+.flights-page h1 {
+    color: #02487c;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+ Error + Empty states 
+.error {
+    color: #b00020;
+    background: #ffe9ec;
+    border: 1px solid #ffccd3;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin: 10px 0 18px;
+}
+.empty {
+    text-align: center;
+    color: #666;
+}
+
+ Table 
+.flights-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,.06);
+}
+
+.flights-table thead th {
+    background: #02487c;
+    color: #fff;
+    text-align: left;
+    padding: 12px 14px;
+    font-weight: 700;
+}
+
+.flights-table tbody td {
+    padding: 12px 14px;
+    border-top: 1px solid #e9eef3;
+}
+
+.flights-table tbody tr:hover {
+    background: #f6fbff;
+}
+
+ Buttons 
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid transparent;
+}
+
+.btn.primary {
+    background: #02487c;
+    color: #fff;
+}
+.btn.primary:hover { background: #0a5b9e; }
+
+.btn.secondary {
+    background: #fff;
+    color: #02487c;
+    border-color: #02487c;
+}
+.btn.secondary:hover {
+    background: #e9f4ff;
+}
+
+ Align action column 
+td.action { white-space: nowrap; }
+
+body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            color: #02487c;
+        }
+
+        table {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: #02487c;
+            color: white;
+        }
+
+        th, td {
+            padding: 14px 12px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f6fa;
+        }
+
+        tr:hover {
+            background: #02487c;
+            transition: 0.2s;
+            color:white;
+        }
+
+        th {
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+
+         Action buttons 
+        a {
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        a[href*="BookFlightServlet"] {
+            background: white;
+            color: black;
+        }
+
+        a[href*="BookFlightServlet"]:hover {
+            background: #008ecc;
+        }
+
+        a[href*="login.jsp"] {
+            background: white;
+            color: black;
+        }
+
+        a[href*="login.jsp"]:hover {
+            background: #008ecc;
+
+        }
+
+         Error / Empty message row 
+        td[colspan="8"] {
+            padding: 20px;
+            font-style: italic;
+            color: #555;
+        }*/
